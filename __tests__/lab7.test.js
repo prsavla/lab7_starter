@@ -110,7 +110,6 @@ describe('Basic user flow for Website', () => {
       const innerText = await (await button.getProperty('innerText')).jsonValue();
       if (innerText === 'Add to Cart') {
         await button.click();
-        await new Promise(r => setTimeout(r, 50)); // small delay
       }
     }
     
